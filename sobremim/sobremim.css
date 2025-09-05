@@ -1,0 +1,198 @@
+@font-face {
+    font-family: OneShot;
+    src: url(../Fontes/TerminusTTF-Bold.ttf);
+}
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        background-color: #fffbdc;
+        position: relative;
+
+        height: 100vh;
+        width: 100vw;
+        margin: 0%;
+
+    }
+
+    p{
+        font-family: OneShot;
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        word-break: normal;
+        font-size: 100%;
+
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    a{
+        display: block;
+        text-align: justify;
+    }
+
+    h2{
+        margin: 0;
+    }
+
+    #container{
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        width: 90vw;
+        height: auto;
+        position: relative;
+        
+        gap: 0%;
+
+        margin: 5% 2%;
+        border: 5px solid #8f7c62;
+    }
+
+    #sobremim{
+        height: auto;
+        width: 90%;
+
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        box-sizing: border-box;
+
+        padding: 0 5% 5% 5%;
+    }
+
+    #sobremim h1{
+        text-align: center;
+        font-family: OneShot;
+        width: 100%;
+        font-size: 200%;
+
+        margin-top: 0;
+    }
+
+    #creditos {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    a{
+        text-align: center;
+        color: #553a00;
+        font-family: Oneshot;
+        transition: all 0.5s;
+    }
+
+    #voltar{
+        padding: 0 0 2% 0;
+        
+    }
+
+    a:hover{
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+
+}
+
+@media (min-width: 769px){
+    body{
+        background-color: #fffbdc;
+        position: relative;
+
+        height: auto;
+        width: 100vw;
+        margin: 0%;
+
+    }
+
+    p{
+        font-family: OneShot;
+        width: 100%;
+        height: auto;
+        text-align: justify;
+        word-break: normal;
+        font-size: 100%;
+
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    a{
+        display: block;
+        text-align: justify;
+    }
+
+    h2{
+        margin: 0;
+    }
+
+    #container{
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+        width: 90vw;
+        height: 90vh;
+        position: relative;
+        
+        gap: 0%;
+
+        margin: 5% 2%;
+        border: 5px solid #8f7c62;
+    }
+
+    #sobremim{
+        height: 85%;
+        width: 90%;
+
+        text-align: center;
+        justify-self: center;
+        align-self: center;
+        box-sizing: border-box;
+        font-size: 110%;
+
+        padding: 0 5% 0% 5%;
+    }
+
+    #sobremim h1{
+        text-align: center;
+        font-family: OneShot;
+        width: 100%;
+        font-size: 200%;
+
+        margin-top: 0;
+    }
+
+    #creditos {
+        font-family: OneShot;
+        
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        text-align: center;
+        overflow-wrap: break-word;
+        padding: 0 0 1% 0;
+    }
+
+    a{
+        text-align: center;
+        color: #553a00;
+        font-family: Oneshot;
+        transition: all 0.5s;
+    }
+
+
+    a:hover{
+        transform: scale(1.1);
+        transform-origin: center;
+    }
+
+
+
+
+}

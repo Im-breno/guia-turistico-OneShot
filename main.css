@@ -1,0 +1,438 @@
+@font-face {
+    font-family: OneShot;
+    src: url(Fontes/TerminusTTF-Bold.ttf);
+}
+
+
+@media (max-width: 768px) {
+
+    body{
+        background-image: url(img/Main.png);
+        background-size: cover;
+        background-repeat: space;
+        background-attachment: fixed;
+        height: 100vh;
+        margin: 0;
+    }
+
+    a{
+        color: #fdd44c;
+    }
+
+    a:active{
+        color: #551a8b;
+    }
+
+    p{
+        font-family: OneShot;
+        color: white;
+        margin: 3%;
+    }
+
+    #container{
+        margin: 3%;
+        gap: 3%;
+        display: grid;
+        height: 95vh;
+
+        max-width: 100vw;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1.5fr 1fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "nav"
+        "sobremim";
+    }
+
+    header{
+        min-width: 276px;
+        height: 100%;
+        width: 100%;
+        grid-area: header;
+        position: relative;
+
+        
+    }
+
+    #titulo{
+        position: relative;
+    }
+
+    #logo{
+        background-color: #0000009e;
+        height: 100%;
+        width: 100%;
+        padding: 2%;
+        box-sizing: border-box;
+    }
+
+    #subtitulo{
+        white-space: nowrap;
+        font-size: 100%;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    main{
+        height: 100%;
+        width: auto;
+        grid-area: main;
+        background-color: #0000009e;
+    }
+
+    nav{
+        max-height: 200px;
+        grid-area: nav;
+        background-color: #0000009e;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 100%;
+        
+    }
+
+    #terrasaridas{
+
+        height: 100%;
+        width: 100%;
+
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        position: relative;
+    }
+
+    #terrasaridas img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #terrasaridas p{
+        z-index: 1;
+        padding: 1%;
+        color: #fdd44c;
+        position: absolute;
+        font-size: 130%;
+        margin: 0%;
+        bottom: -15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        background-color: #000000b8;
+        text-align: center;
+    }
+
+    #vale{
+        height: 100%;
+        width: 100%;
+        
+        grid-column: 2 / 3;
+        grid-row: 1 /2;
+        position: relative;
+    }
+
+    #vale img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #vale p{
+        margin: 0%;
+        z-index: 1;
+        padding: 1%;
+        color: #fdd44c;
+        position: absolute;
+        font-size: 130%;
+        bottom: -15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        background-color: #000000b8;
+        text-align: center;
+    }
+
+    #refugio{
+        height: 100%;
+        width: 100%;
+
+        grid-template-columns: 3 / 4;
+        grid-row: 1 /2;
+        position: relative;
+    }
+
+    #refugio img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #refugio p{
+        margin: 0%;
+        z-index: 1;
+        padding: 1%;
+        color: #fdd44c;
+        position: absolute;
+        font-size: 130%;
+        bottom: -15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        background-color: #000000b8;
+        text-align: center;
+    }
+
+    #sobremim{
+        grid-area: sobremim;
+
+        text-align: center;
+        align-self: center;
+        font-size: 150%;
+        font-family: OneShot;
+    }
+
+
+}
+
+@media  (min-width: 768px){
+    body{
+        background-image: url(img/Main.png);
+        background-size: cover;
+        background-repeat: space;
+        background-attachment: fixed;
+        margin: 0;
+        position: relative;
+    }
+
+    a{
+        color: #fdd44c;
+        transition: all 0.5s;
+    }
+
+    a:active{
+        color: #551a8b;
+
+    }
+
+    a:hover{
+        color: #551a8b;
+    }
+
+    p{
+        font-family: OneShot;
+        color: white;
+        margin: 3%;
+        font-size: 150%;
+        text-align: justify;
+    }
+
+    #container{
+        margin: 0% 3%;
+        gap: 3%;
+        position: absolute;
+        right: 3%;
+        height: 95vh;
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "nav"
+        "sobremim";
+    }
+
+    header{
+        min-width: 276px;
+        height: 100%;
+        width: 100%;
+        grid-area: header;
+        position: relative;
+        background-color: #0000009e
+        
+    }
+
+    #titulo{
+        position: relative;
+        text-align: center;
+    }
+
+    #logo{
+        height: 80%;
+        width: 80%;
+        padding: 2%;
+        box-sizing: border-box;
+        align-self: center;
+    }
+
+    #subtitulo{
+        white-space: nowrap;
+        font-size: 100%;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    main{
+        height: 100%;
+        width: auto;
+        grid-area: main;
+        background-color: #0000009e;
+    }
+
+    nav{
+        max-height: 200px;
+        grid-area: nav;
+        background-color: #0000009e;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 100%;
+        text-align: center;
+        
+    }
+
+    #terrasaridas{
+
+        width: 90%;
+        height: 90%;
+
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    #terrasaridas:hover{
+        transform-origin: center;
+        transform: scale(1.2);
+    }
+
+    #terrasaridas img{
+        width: 90%;
+        height: 90%;
+    }
+
+    #terrasaridas p{
+        z-index: 1;
+        padding: 1%;
+        color: #fdd44c;
+        position: absolute;
+        font-size: 130%;
+        margin: 0%;
+        bottom: -15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        background-color: #000000b8;
+        text-align: center;
+    }
+
+    #vale{
+        width: 90%;
+        height: 90%;
+        
+        grid-column: 2 / 3;
+        grid-row: 1 /2;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    #vale:hover{
+        transform-origin: center;
+        transform: scale(1.2);
+    }
+
+    #vale img{
+        width: 90%;
+        height: 90%;
+    }
+
+    #vale p{
+        margin: 0%;
+        z-index: 1;
+        padding: 1%;
+        color: #fdd44c;
+        position: absolute;
+        font-size: 130%;
+        bottom: -15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        background-color: #000000b8;
+        text-align: center;
+    }
+
+    #refugio{
+        width: 90%;
+        height: 90%;
+
+        grid-template-columns: 3 / 4;
+        grid-row: 1 /2;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    #refugio:hover{
+        transform-origin: center;
+        transform: scale(1.2);
+    }
+
+    #refugio img{
+        width: 90%;
+        height: 90%;
+    }
+
+    #refugio p{
+        margin: 0%;
+        z-index: 1;
+        padding: 1%;
+        color: #fdd44c;
+        position: absolute;
+        font-size: 130%;
+        bottom: -15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        width: 100%;
+        height: 30%;
+        background-color: #000000b8;
+        text-align: center;
+    }
+
+    #sobremim{
+        grid-area: sobremim;
+        z-index: 1;
+
+        text-align: center;
+        align-self: center;
+        font-size: 150%;
+        font-family: OneShot;
+        transition: all 0.5s;
+    }
+
+
+    #sobremim:hover{
+        transform-origin: center;
+        transform: scale(1.3);
+    }
+}
